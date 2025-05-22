@@ -1,61 +1,128 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Michael Olukayode | Cybersecurity & Community Impact</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      max-width: 800px;
+      background-color: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, section, footer {
+      max-width: 960px;
       margin: auto;
       padding: 20px;
     }
-    h1, h2 {
-      color: #2c3e50;
+    header {
+      text-align: center;
     }
-    a {
-      color: #007acc;
+    nav {
+      background: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #90caf9;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    img.profile {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 20px auto;
     }
     .section {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: #1f1f1f;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1>Michael Olukayode</h1>
-  <p><strong>Cybersecurity Researcher | Community Leader | First-Gen Student</strong></p>
+  <header>
+    <h1>Michael Olukayode</h1>
+    <p>Cybersecurity Researcher | Community Leader | First-Gen Student</p>
+    <img src="profile_photo.jpg" alt="Michael Olukayode" class="profile" />
+  </header>
 
-  <div class="section">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#events">Events</a>
+    <a href="#awards">Awards</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      I’m a final-year Computer Science student at BOUESTI, Nigeria. As a first-generation student from an underrepresented region,
-      my passion lies in using cybersecurity knowledge to empower my community and support inclusive digital safety.
+      I'm a final-year Computer Science student at BOUESTI, Nigeria. As a first-generation student from an underrepresented region, I use my experience in cybersecurity and community leadership to create safe, empowering spaces for African youth in tech.
     </p>
-  </div>
+  </section>
 
-  <div class="section">
+  <section id="projects" class="section">
     <h2>Cybersecurity Projects</h2>
-    <ul>
-      <li><strong>Phishing Simulation Tool:</strong> Built a tool to help local SMEs understand and train against phishing attacks.</li>
-      <li><strong>Mobile App Security Audit:</strong> Conducted security assessments for a local e-learning platform.</li>
-    </ul>
-  </div>
+    <div class="card">
+      <h3>Dartmind.io Simulation</h3>
+      <p>Built simulation models for a gamified mental health startup to study user behavior and test interventions.</p>
+    </div>
+    <div class="card">
+      <h3>GOMYCODE Curriculum Contribution</h3>
+      <p>Contributed to the redesign of cybersecurity and software courses to match evolving trends and improve student engagement.</p>
+    </div>
+  </section>
 
-  <div class="section">
-    <h2>Community Leadership</h2>
-    <ul>
-      <li><strong>GDSC Lead:</strong> Organized developer workshops for over 300 students, improving access to tech education.</li>
-      <li><strong>Cybersecurity Awareness Program:</strong> Facilitated community-based seminars on staying safe online.</li>
-    </ul>
-  </div>
+  <section id="events" class="section">
+    <h2>Events Organized & Speaking Engagements</h2>
+    <div class="card">
+      <h3>Cybersecurity Bootcamp (GDSC BOUESTI)</h3>
+      <p>Led campus-wide security training for over 300 students covering phishing, authentication, and safe browsing.</p>
+    </div>
+    <div class="card">
+      <h3>She Code Africa – BOUESTI Chapter</h3>
+      <p>Partnered to host inclusive tech events promoting security awareness among underrepresented groups.</p>
+    </div>
+    <div class="card">
+      <h3>Speaker – Developer Week Nigeria 2024</h3>
+      <p>Delivered a session on "Ethical Hacking 101 for Students."</p>
+    </div>
+  </section>
 
-  <div class="section">
+  <section id="awards" class="section">
+    <h2>Awards & Recognition</h2>
+    <div class="card">
+      <p><strong>Google Developer Student Clubs Certificate</strong> – Recognized for impactful student leadership (2023–2024).</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-  </div>
+    <p>Email: michael.olukayode@example.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Michael Olukayode | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
